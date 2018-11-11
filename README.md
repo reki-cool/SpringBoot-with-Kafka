@@ -7,7 +7,7 @@
 ![struction](https://raw.githubusercontent.com/duyanhan1995/SpringBoot-with-Kafka/master/src/main/resources/SpringBoot-Kafka-Application.png)
 ## 构建步骤
 ### 创建应用程序
- - Create New Project -> Spring Initializr
+ - idea -> Create New Project -> Spring Initializr
  - 选择 http://start.spring.io -> Next
  - Artifact 字段填"kafka-demo"
  - 依赖组件选择：Web, Kafka
