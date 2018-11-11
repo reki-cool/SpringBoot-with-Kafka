@@ -13,12 +13,12 @@
 ### 目录结构预览
  - com.example.kafkademo
     - controller // 控制器
-        - WebRestController
+        - [WebRestController](https://github.com/duyanhan1995/SpringBoot-with-Kafka/blob/master/src/main/java/com/example/kafkademo/controller/WebRestController.java) // 控制器接口类->包含生产和消费消息的两个接口
     - services // 业务
-        - KafkaConsumer
-        - KafkaProducer
+        - [KafkaConsumer](https://github.com/duyanhan1995/SpringBoot-with-Kafka/blob/master/src/main/java/com/example/kafkademo/services/KafkaConsumer.java) // kafka 消费者->消费(接收处理来自kafka的)消息
+        - [KafkaProducer](https://github.com/duyanhan1995/SpringBoot-with-Kafka/blob/master/src/main/java/com/example/kafkademo/services/KafkaProducer.java) // kafka 生产者->生产(产生并发送给kafka)消息
     - storage  // 存储类包
-        - MessageStorage
+        - [MessageStorage](https://github.com/duyanhan1995/SpringBoot-with-Kafka/blob/master/src/main/java/com/example/kafkademo/storage/MessageStorage.java) // 消息存储类->用来保存生产者产生的消息
         
 ### 写配置文件
 ```properties
@@ -35,3 +35,4 @@ spring.kafka.consumer.group-id=test-group
 ## kafka 消费者的earliest配置消费当前分组下的所有内容
 spring.kafka.consumer.auto-offset-reset=earliest
 ```
+
